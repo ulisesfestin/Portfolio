@@ -19,10 +19,16 @@
                     <h2>Portfolio</h2>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#inicio" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="#proyectos" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+                    <li><a href="#habilidades" class="nav-link" data-i18n="nav.skills">Habilidades</a></li>
+                    <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+                    <li>
+                        <button id="lang-toggle" class="lang-toggle" aria-label="Change language">
+                            <span class="lang-icon">🌐</span>
+                            <span id="current-lang">ES</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -32,10 +38,10 @@
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Ingeniero de Software e Informática</h1>
-                <p class="hero-subtitle">Transformando ideas en soluciones tecnológicas escalables y de alto valor</p>
+                <h1 class="hero-title" data-i18n="hero.title">Ingeniero de Software e Informática</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Transformando ideas en soluciones tecnológicas escalables y de alto valor</p>
                 <div class="hero-actions">
-                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#proyectos" class="btn btn-primary" data-i18n="hero.cta">Ver Proyectos</a>
                     <div class="social-links">
                         <a href="https://github.com/ulisesfestin" target="_blank" class="social-link" aria-label="GitHub">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -56,32 +62,32 @@
     <!-- Sección de Habilidades/Perfil -->
     <section id="habilidades" class="skills">
         <div class="container">
-            <h2 class="section-title">Áreas de Especialización</h2>
+            <h2 class="section-title" data-i18n="skills.title">Áreas de Especialización</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">🌐</div>
-                    <h3>Desarrollo Web & Backend</h3>
-                    <p>Aplicaciones web modernas con APIs REST escalables, gestión de bases de datos y arquitecturas cloud</p>
+                    <h3 data-i18n="skills.web.title">Desarrollo Web & Backend</h3>
+                    <p data-i18n="skills.web.desc">Aplicaciones web modernas con APIs REST escalables, gestión de bases de datos y arquitecturas cloud</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">📱</div>
-                    <h3>Desarrollo Móvil</h3>
-                    <p>Aplicaciones móviles multiplataforma con React Native y Java, enfocadas en experiencia de usuario y gestión por roles</p>
+                    <h3 data-i18n="skills.mobile.title">Desarrollo Móvil</h3>
+                    <p data-i18n="skills.mobile.desc">Aplicaciones móviles multiplataforma con React Native y Java, enfocadas en experiencia de usuario y gestión por roles</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🧠</div>
-                    <h3>Deep Learning & Computer Vision</h3>
-                    <p>Modelos de IA con PyTorch para detección y clasificación de objetos, alcanzando alta precisión en producción</p>
+                    <h3 data-i18n="skills.dl.title">Deep Learning & Computer Vision</h3>
+                    <p data-i18n="skills.dl.desc">Modelos de IA con PyTorch para detección y clasificación de objetos, alcanzando alta precisión en producción</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🤖</div>
-                    <h3>IA Generativa</h3>
-                    <p>Asistentes virtuales con LLMs integrados a WhatsApp para automatización inteligente y venta consultiva</p>
+                    <h3 data-i18n="skills.ai.title">IA Generativa</h3>
+                    <p data-i18n="skills.ai.desc">Asistentes virtuales con LLMs integrados a WhatsApp para automatización inteligente y venta consultiva</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🥽</div>
-                    <h3>Realidad Virtual</h3>
-                    <p>Experiencias VR inmersivas con Unity 3D para educación, capacitación y simulación de procesos complejos</p>
+                    <h3 data-i18n="skills.vr.title">Realidad Virtual</h3>
+                    <p data-i18n="skills.vr.desc">Experiencias VR inmersivas con Unity 3D para educación, capacitación y simulación de procesos complejos</p>
                 </div>
             </div>
         </div>
@@ -90,7 +96,7 @@
     <!-- Sección de Proyectos -->
     <section id="proyectos" class="projects">
         <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
+            <h2 class="section-title" data-i18n="projects.title">Proyectos Destacados</h2>
             <div class="projects-grid">
                 
                 <!-- Proyecto 1: App Web Playa de Estacionamiento -->
@@ -101,11 +107,11 @@
                     </figure>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">App Web para Playa de Estacionamiento</h3>
+                            <h3 class="project-title" data-i18n="project1.title">App Web para Playa de Estacionamiento</h3>
                             <span class="project-year">2023</span>
                         </div>
-                        <span class="project-role">Freelancer</span>
-                        <p class="project-description">
+                        <span class="project-role" data-i18n="projects.role.freelancer">Freelancer</span>
+                        <p class="project-description" data-i18n="project1.desc">
                             Sistema web para reservas en tiempo real de lugares en una playa de estacionamiento local, 
                             ofreciendo comodidad y disponibilidad 24/7 a los clientes.
                         </p>
@@ -126,11 +132,11 @@
                     </figure>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">Servidor Backend para Gestión de Alquileres</h3>
+                            <h3 class="project-title" data-i18n="project2.title">Servidor Backend para Gestión de Alquileres</h3>
                             <span class="project-year">2023</span>
                         </div>
-                        <span class="project-role">Freelancer</span>
-                        <p class="project-description">
+                        <span class="project-role" data-i18n="projects.role.freelancer">Freelancer</span>
+                        <p class="project-description" data-i18n="project2.desc">
                             Sistema backend robusto para la gestión centralizada de reservas, usuarios y departamentos 
                             de un complejo, facilitando un seguimiento ordenado y eficiente.
                         </p>
@@ -151,11 +157,11 @@
                     </figure>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">App Mobile de Productos de Belleza</h3>
+                            <h3 class="project-title" data-i18n="project3.title">App Mobile de Productos de Belleza</h3>
                             <span class="project-year">2024</span>
                         </div>
-                        <span class="project-role">Freelancer</span>
-                        <p class="project-description">
+                        <span class="project-role" data-i18n="projects.role.freelancer">Freelancer</span>
+                        <p class="project-description" data-i18n="project3.desc">
                             Aplicación móvil que unifica la gestión de pedidos de vendedoras con la venta directa web, 
                             optimizando el flujo de trabajo y consolidando las operaciones comerciales en una sola plataforma por roles.
                         </p>
@@ -177,11 +183,11 @@
                     </figure>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">Sistema de Clasificación de Vehículos en Peajes con Deep Learning</h3>
+                            <h3 class="project-title" data-i18n="project4.title">Sistema de Clasificación de Vehículos en Peajes con Deep Learning</h3>
                             <span class="project-year">2024</span>
                         </div>
-                        <span class="project-role">Hackathon</span>
-                        <p class="project-description">
+                        <span class="project-role" data-i18n="projects.role.hackathon">Hackathon</span>
+                        <p class="project-description" data-i18n="project4.desc">
                             Modelo de Deep Learning mediante Visión Computacional para automatizar el cobro de peajes, 
                             clasificando automáticamente el tipo de vehículo (auto, moto, bus, camión, ambulancia) y 
                             asignando el monto correspondiente. Logró 97% de precisión utilizando Faster R-CNN.
@@ -203,11 +209,11 @@
                     </figure>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">MMS Chemistry VR</h3>
+                            <h3 class="project-title" data-i18n="project5.title">MMS Chemistry VR</h3>
                             <span class="project-year">2025</span>
                         </div>
-                        <span class="project-role">Tesis de Grado</span>
-                        <p class="project-description">
+                        <span class="project-role" data-i18n="projects.role.thesis">Tesis de Grado</span>
+                        <p class="project-description" data-i18n="project5.desc">
                             Aplicación de Realidad Virtual que simula una técnica de laboratorio para control de calidad (agua/alimentos), 
                             publicada en Meta Horizon. Permite la práctica sin riesgos ni costos de materiales.
                         </p>
@@ -228,11 +234,11 @@
                     </figure>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">Asistente Virtual con IA Generativa para Venta Consultiva</h3>
+                            <h3 class="project-title" data-i18n="project6.title">Asistente Virtual con IA Generativa para Venta Consultiva</h3>
                             <span class="project-year">2025</span>
                         </div>
-                        <span class="project-role">Contrato Desarrollo a Medida</span>
-                        <p class="project-description">
+                        <span class="project-role" data-i18n="projects.role.contract">Contrato Desarrollo a Medida</span>
+                        <p class="project-description" data-i18n="project6.desc">
                             Asistente virtual integrado a WhatsApp que utiliza IA Generativa para interpretar la necesidad del cliente 
                             e impulsar la venta consultiva de indumentaria personalizada.
                         </p>
@@ -253,9 +259,9 @@
     <!-- Sección de Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2 class="section-title">Conectemos</h2>
+            <h2 class="section-title" data-i18n="contact.title">Conectemos</h2>
             <div class="contact-content">
-                <p class="contact-message">¿Tienes un proyecto en mente? Me encantaría colaborar contigo.</p>
+                <p class="contact-message" data-i18n="contact.message">¿Tienes un proyecto en mente? Me encantaría colaborar contigo.</p>
                 <div class="contact-info">
                     <a href="mailto:ulises_festin@hotmail.com" class="contact-link">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -271,7 +277,7 @@
                         LinkedIn
                     </a>
                 </div>
-                <p class="contact-cta">Conectemos para tu próximo proyecto</p>
+                <p class="contact-cta" data-i18n="contact.cta">Conectemos para tu próximo proyecto</p>
             </div>
         </div>
     </section>
@@ -279,9 +285,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Ulises Festin. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Ulises Festin. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
 </body>
 </html>
